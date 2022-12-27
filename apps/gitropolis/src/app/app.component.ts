@@ -14,6 +14,4 @@ import { RouterModule } from '@angular/router';
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent {
-  title = 'gitropolis';
-}
+export class AppComponent {}
