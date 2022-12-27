@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nx-angular/organizations/feat-repositories": [
+        "libs/organizations/feat-repositories/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
