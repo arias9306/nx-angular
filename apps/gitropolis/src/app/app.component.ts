@@ -8,8 +8,8 @@ import { RouterModule } from '@angular/router';
   template: `
     <div class="container-lg p-responsive">
       <h1>Gitropolis</h1>
+      <router-outlet></router-outlet>
     </div>
-    <router-outlet></router-outlet>
   `,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
