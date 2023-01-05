@@ -1,0 +1,29 @@
+[
+  {
+    "name": "thread_name",
+    "ph": "M",
+    "pid": 9264,
+    "tid": 0,
+    "ts": 0,
+    "args": {
+      "name": "Group #1"
+    }
+  },
+  {
+    "name": "gitropolis:build:production",
+    "cat": "gitropolis,build,production",
+    "ph": "X",
+    "ts": 7464849.69997406,
+    "dur": 162124847.8000164,
+    "pid": 9264,
+    "tid": 0,
+    "args": {
+      "target": {
+        "project": "gitropolis",
+        "target": "build",
+        "configuration": "production"
+      },
+      "status": "success"
+    }
+  }
+]

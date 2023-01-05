@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-angular/organizations/data-access": [
+        "libs/organizations/data-access/src/index.ts"
+      ],
       "@nx-angular/organizations/feat-repositories": [
         "libs/organizations/feat-repositories/src/index.ts"
       ]
