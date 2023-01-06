@@ -29,7 +29,7 @@ export class RepositoryStateService extends RxState<RepositoryState> {
                   description: description ?? '',
                   name,
                   organization,
-                  topics: topics ?? [],
+                  topics: topics?.slice(0, 7) ?? [],
                 })
               )
             )

@@ -1,25 +1,28 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Repository } from '@nx-angular/organizations/data-access';
 
 import { TopicsComponent } from '../topics/topics.component';
 
 @Component({
   selector: 'gitropolis-orgs-public-source',
   standalone: true,
-  imports: [TopicsComponent],
+  imports: [TopicsComponent, CommonModule],
   template: `
     <h3>
-      {{ name }}
+      {{ repository?.name }}
       <span class="Label Label--secondary ml-1">Public</span>
     </h3>
-    <p>
-      {{ description }}
+    <p *ngIf="repository?.description">
+      {{ repository?.description }}
     </p>
-    <gitropolis-orgs-topics></gitropolis-orgs-topics>
+    <gitropolis-orgs-topics
+      [topics]="repository?.topics ?? []"
+    ></gitropolis-orgs-topics>
   `,
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PublicSourceComponent {
-  description = 'Smart, Fast and Extensible Build System';
-  name = 'nx';
+  @Input() repository: Repository | null = null;
 }

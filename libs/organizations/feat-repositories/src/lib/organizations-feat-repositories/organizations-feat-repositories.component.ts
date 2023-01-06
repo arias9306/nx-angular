@@ -1,21 +1,13 @@
 import { Component } from '@angular/core';
 
-import { PublicSourceComponent } from '../public-source/public-source.component';
+import { RepositoryListComponent } from '../repository-list/repository-list.component';
 
 @Component({
   selector: 'gitropolis-orgs-repository',
   standalone: true,
-  imports: [PublicSourceComponent],
+  imports: [RepositoryListComponent],
   template: `
-    <h2>Repositories</h2>
-    <br />
-    <div class="Box">
-      <ul>
-        <li class="Box-row">
-          <gitropolis-orgs-public-source></gitropolis-orgs-public-source>
-        </li>
-      </ul>
-    </div>
+    <gitropolis-orgs-repository-list></gitropolis-orgs-repository-list>
   `,
   styles: [],
 })
