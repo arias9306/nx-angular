@@ -8,4 +8,8 @@ export const appRoutes: Routes = [
         (m) => m.OrganizationsFeatrepositoriesComponent
       ),
   },
+  {
+    path: '**',
+    redirectTo: 'orgs/nrwl/repositories',
+  },
 ];
